@@ -36,6 +36,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,7 +63,7 @@ div {
 }
 
 header {
-  background-image: url(/images/banner-main.jpg);
+  background-image: url(/images/banner-main.svg);
   background-size: cover;
   height: 100vh;
 }
@@ -113,7 +114,7 @@ header .form-control {
 
 header .btn-login {
   min-width: 180px;
-  background: #ffd756;
+  background: #FAB8C4;
   color: #5956E9;
   border: none;
   height: 60px;
@@ -134,9 +135,13 @@ header .slider-control {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .main_link {
+  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,14 +190,14 @@ header .main_link .text-link:hover {
   position: absolute;
   z-index: 2;
   left: -20px;
-  bottom: 300px;
+  bottom: 200px;
 }
 
 .slider-header .main-pic .main-pic-2 {
   position: absolute;
   z-index: 2;
   top: -15px;
-  right: 120px;
+  right: -50px;
 }
 
 .slider-header .main-pic .main-pic-3 {
@@ -239,7 +244,7 @@ header .main_link .text-link:hover {
 }
 
 .btn-pink {
-  background: #FF755D;
+  background: #FAB8C4;
   color: #27272E;
   border: none;
   height: 60px;
@@ -828,6 +833,36 @@ footer .copy-right {
   height: 723px;
   border-radius: 390px;
   background: rgba(255, 255, 255, 0.3);
+}
+
+.access .access-clouds {
+  position: absolute;
+  z-index: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 150px;
+  left: 200px;
+}
+
+.access .access-clouds .access-cloud-1 {
+  position: absolute;
+  z-index: 9;
+  top: -57px;
+  right: 80px;
+}
+
+.access .access-clouds .access-cloud-2 {
+  position: absolute;
+  z-index: 8;
+  top: 300px;
+  left: 420px;
 }
 
 @media screen and (max-width: 576px) {
