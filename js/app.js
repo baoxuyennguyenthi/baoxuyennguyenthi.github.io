@@ -78,13 +78,23 @@ function buttonUp() {
 
 window.onscroll = function () { scrollFunction() };
 menu = document.getElementById("menu-main");
+mybutton = document.getElementById("myBtn");
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         menu.classList.add("fixed-top")
     } else {
         menu.classList.remove("fixed-top")
     }
+    //back to top
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.opacity = 1;
+        mybutton.style.visibility = "visible";
+    } else {
+        mybutton.style.opacity = 0;
+        mybutton.style.visibility = "hidden";
+    }
 }
+
 
 //
 
@@ -119,3 +129,21 @@ nav.find('a').on('click', function () {
 
     return false;
 });
+
+
+
+//When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+function downFunction() {
+    md = document.getElementById("features");
+    // nav = document.getElementById("navbar");
+    window.scrollTo({
+        top: md.offsetTop - 100,
+        behavior: "smooth"
+    })
+}
