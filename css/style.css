@@ -681,6 +681,12 @@ section {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .pricing-item {
+    padding: 10px 30px;
+  }
+}
+
 /* Pricing */
 #pricing {
   /* Rounded sliders */
@@ -779,6 +785,7 @@ section {
 
 #pricing .pricing-content .pricing-item {
   padding: 40px;
+  margin-bottom: 40px;
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -984,6 +991,7 @@ footer .copy-right {
   z-index: 9;
   top: -57px;
   right: -44px;
+  width: 300px !important;
 }
 
 .access .access-pic .access-pic-2 {
@@ -991,11 +999,13 @@ footer .copy-right {
   z-index: 8;
   top: 178px;
   left: -98px;
+  width: 213px !important;
 }
 
 .access .access-pic .access-pic-3 {
   position: relative;
   z-index: 7;
+  width: 487px !important;
 }
 
 .access .access-circles {

@@ -730,6 +730,17 @@ section {
 
 }
 
+
+
+@media screen and (max-width: 576px) {
+
+    .pricing-item {
+        padding: 10px 30px;
+    }
+
+
+}
+
 /* Pricing */
 #pricing {
     .pricing-stage {
@@ -835,6 +846,7 @@ section {
 
         .pricing-item {
             padding: 40px;
+            margin-bottom: 40px;
             border-radius: 30px;
             display: flex;
             flex-direction: column;
@@ -1027,7 +1039,7 @@ footer {
             z-index: 9;
             top: -57px;
             right: -44px;
-            // width: 300px !important;
+            width: 300px !important;
         }
 
         .access-pic-2 {
@@ -1035,13 +1047,13 @@ footer {
             z-index: 8;
             top: 178px;
             left: -98px;
-            // width: 213px !important;
+            width: 213px !important;
         }
 
         .access-pic-3 {
             position: relative;
             z-index: 7;
-            // width: 487px !important;
+            width: 487px !important;
 
         }
     }
