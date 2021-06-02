@@ -16,8 +16,8 @@
 
 <body>
     <!--Header-->
-    <header class="parallax" class="after" id="wave">
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <header class="parallax" class="after" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light" id="menu-main">
             <div class="container">
                 <a class="navbar-brand" href="#"> <img src="/images/logo.svg" alt="" srcset=""> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -28,44 +28,40 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#features">Features <span class="sr-only">(current)</span></a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#about">About us</a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tours</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Explore
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Explore
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Support</a>
-                                <a class="dropdown-item" href="#">Contact</a>
-                            </div>
                         </li>
                     </ul>
                     <div class="form-search">
-                        <form class="form-inline my-2 my-lg-0">
+                        <!-- <form class="form-inline my-2 my-lg-0">
                             <input class="mr-sm-2 ip-search" type="search" placeholder="Search ..." aria-label="Search">
                             <button class="btn btn-search" type="button"> <i class="icon-search"></i></button>
-                        </form>
-
+                        </form> -->
+                        <form class="searchbar"> <input type="search" placeholder="Search here" name="search"
+                                class="searchbar-input" onkeyup="buttonUp();" required> <input type="submit"
+                                class="searchbar-submit" value="GO"> <span class="searchbar-icon"><i class="icon-search"
+                                    aria-hidden="true"></i></span> </form>
                     </div>
-                    <button class="btn-login" type="submit">Contact Us</button>
+
                 </div>
+                <button class="btn-login" type="submit">Contact Us</button>
+            </div>
             </div>
         </nav>
 
         <div class="slider-header">
             <div class="container">
-                <div class="row">
+                <div class="row sl-header">
                     <div class="col-md-4 col-12 text-left mr-auto ml-0" data-aos="fade-right">
                         <div class="sl-title">
                             <img src="/images/logo.png" alt="" srcset="">
@@ -93,8 +89,15 @@
 
                     </div>
                 </div>
-
-
+            </div>
+            <div class="header-circles">
+                <div class="header-circle"></div>
+                <div class="header-circle"></div>
+                <div class="header-circle"></div>
+                <div class="header-circle"></div>
+                <div class="header-circle"></div>
+                <div class="header-circle"></div>
+                <!-- <div class="header-circle"></div> -->
             </div>
         </div>
         <div class='icon-scroll' onclick="downFunction();">
