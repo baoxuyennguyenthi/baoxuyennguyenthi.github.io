@@ -115,7 +115,7 @@ nav.find('a').on('click', function () {
 
     $('html, body').animate({
         scrollTop: $(id).offset().top - 100
-    }, 150);
+    }, 500);
 
     return false;
 });
