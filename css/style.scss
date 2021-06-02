@@ -123,7 +123,6 @@ header {
         &.fixed-top {
             background-color: #fff;
             padding: 0 20px;
-            // box-shadow: 0 0 1px 5px #ccc;
             box-shadow: 0px 0.5px 3px #d2d2d2;
 
             // &+div {
@@ -202,13 +201,15 @@ header {
     // height: calc(100vh - 146px);
 
     .main-pic {
-        position: relative;
+        position: absolute;
 
         .main-pic-1 {
             position: absolute;
             z-index: 2;
             left: -20px;
-            bottom: 200px;
+            bottom: 100px;
+            width: 235px;
+            // height: auto;
         }
 
         .main-pic-2 {
@@ -216,17 +217,18 @@ header {
             z-index: 2;
             top: -15px;
             right: -50px;
+            width: 370px;
         }
 
         .main-pic-3 {
             position: absolute;
             z-index: 2;
             right: 100px;
-            bottom: 110px;
+            bottom: 10px;
         }
 
         .main-pic-4 {
-            position: absolute;
+            position: relative;
             z-index: 1;
         }
 
@@ -271,7 +273,7 @@ header {
         .header-circle-3 {
             position: absolute;
             left: 46%;
-            top: 229px;
+            top: 300px;
             z-index: 2;
             width: 128px;
             height: 128px;
@@ -312,8 +314,8 @@ header {
 
         .header-circle-7 {
             position: absolute;
-            top: 57%;
-            right: calc(50% - 594px);
+            top: 58%;
+            right: calc(50% - 500px);
             z-index: 2;
             width: 103px;
             height: 103px;
@@ -337,35 +339,30 @@ header {
     padding: 0 30px;
 }
 
+// @media screen and (min-width: 576px) and (max-width:1024px) {
+//     .btn-login {
+//         display: none;
+//     }
+
+// }
+
 @media screen and (max-width: 576px) {
 
     .navbar,
     .navbar.fixed-top {
         background: #fff !important;
         padding: 0 20px !important;
-        // box-shadow: 0 0 1px 5px #ccc;
         box-shadow: 0px 0.5px 3px #d2d2d2;
-
-        // &+div {
-        //     margin-top: 100px;
-        // }
-    }
-
-    .main-pic {
-        display: none;
     }
 
     .slider-title {
-        font-size: 60px !important;
+        font-size: 70px !important;
     }
 
     .btn-login {
         display: none;
     }
 
-    // .nav-item {
-    //     padding: 0;
-    // }
 
     ul.navbar-nav.mr-auto {
         background-color: #fff;
@@ -380,6 +377,83 @@ header {
         border-bottom: 1px dashed #ccc;
     }
 
+    .main_link {
+        display: none !important;
+    }
+
+    .main-pic {
+        position: relative !important;
+
+        .main-pic-1 {
+            left: calc(50% - 180px) !important;
+            bottom: 20px !important;
+            width: 130px !important;
+        }
+
+        .main-pic-2 {
+            top: 20px !important;
+            right: calc(50% - 130px) !important;
+            width: 110px !important;
+        }
+
+        .main-pic-3 {
+            right: calc(50% - 135px) !important;
+            bottom: 0px !important;
+            width: 45px;
+            right: 70px !important;
+        }
+
+        .main-pic-4 {
+            z-index: 1;
+        }
+
+    }
+
+    .header-circles {
+
+        .header-circle-1 {
+            display: none !important;
+
+        }
+
+        .header-circle-2 {
+            display: none !important;
+        }
+
+        .header-circle-3 {
+            left: 10% !important;
+            top: 230px !important;
+            width: 48px !important;
+            height: 48px !important;
+        }
+
+        .header-circle-4 {
+            display: none !important;
+        }
+
+        .header-circle-5 {
+            position: absolute;
+            right: 0;
+            bottom: 120px !important;
+            z-index: 8;
+        }
+
+        .header-circle-6 {
+            display: none !important;
+        }
+
+        .header-circle-7 {
+            display: none !important;
+        }
+
+        .header-circle-8 {
+            position: absolute;
+            top: 370px !important;
+            right: calc(50% - 250px) !important;
+            width: 170px !important;
+            height: 170px !important;
+        }
+    }
 }
 
 // button
@@ -645,6 +719,17 @@ section {
     }
 }
 
+@media screen and (max-width: 576px) {
+
+    .like {
+        .bg-like {
+            padding: 50px 0 20px 30px;
+        }
+    }
+
+
+}
+
 /* Pricing */
 #pricing {
     .pricing-stage {
@@ -899,13 +984,6 @@ footer {
         right: -130px;
         bottom: 0;
     }
-
-    // .bg-right {
-    //     // position: absolute;
-    //     background-image: url(/images/dot-1.png);
-    //     // background-repeat: no-repeat;
-    //     right: 0;
-    // }
 }
 
 @media screen and (max-width: 576px) {
@@ -949,6 +1027,7 @@ footer {
             z-index: 9;
             top: -57px;
             right: -44px;
+            // width: 300px !important;
         }
 
         .access-pic-2 {
@@ -956,11 +1035,13 @@ footer {
             z-index: 8;
             top: 178px;
             left: -98px;
+            // width: 213px !important;
         }
 
         .access-pic-3 {
             position: relative;
             z-index: 7;
+            // width: 487px !important;
 
         }
     }
@@ -1028,9 +1109,11 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+
     .access {
         display: none;
     }
+
 
 }
 
