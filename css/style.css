@@ -1100,11 +1100,11 @@ section {
 }
 
 /* Pricing */
-#pricing {
-  /* Rounded sliders */
+#pricing .pricing-text {
+  font-weight: 600;
 }
 
-#pricing .pricing-stage {
+#pricing .pricing-stage.stage {
   font-weight: 600;
 }
 
@@ -1122,71 +1122,8 @@ section {
   color: #5956E9;
 }
 
-#pricing .pricing-switch .switch-text {
-  color: #999FAE;
-}
-
-#pricing .pricing-switch .switch-text:active {
-  color: #5956E9;
-}
-
-#pricing .switch {
-  position: relative;
-  display: inline-block;
-  width: 56px;
-  height: 24px;
-}
-
-#pricing .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-#pricing .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-#pricing .slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 7px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-#pricing input:checked + .slider {
-  background-color: #2522BA;
-}
-
-#pricing input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #2522BA;
-          box-shadow: 0 0 1px #2522BA;
-}
-
-#pricing input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-#pricing .slider.round {
-  border-radius: 34px;
-}
-
-#pricing .slider.round:before {
-  border-radius: 50%;
+#pricing .pricing-title-ctn {
+  font-size: 40px;
 }
 
 #pricing .pricing-content {
@@ -1197,7 +1134,6 @@ section {
 
 #pricing .pricing-content .pricing-item {
   padding: 40px;
-  margin-bottom: 40px;
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1206,6 +1142,11 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#pricing .pricing-content .pricing-item:hover {
+  -webkit-box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05) !important;
+          box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05) !important;
 }
 
 #pricing .pricing-content .pricing-item .pricing-icon {
@@ -1234,33 +1175,48 @@ section {
 #pricing .pricing-content .pricing-item .pricing-price .pricing-m {
   font-size: 14px;
   font-weight: 300;
-  color: #eee;
+  color: #ccc;
 }
 
 #pricing .pricing-content .pricing-item .pricing-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-#pricing .pricing-content .pricing-item .pricing-pic {
-  padding: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #pricing .pricing-content .pricing-item .col-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 1.8;
+  height: 100%;
+}
+
+#pricing .pricing-content .pricing-item .price-icon {
+  margin: 20px 0;
 }
 
 #pricing .pricing-content .pricing-item-blue {
   background-color: #5956E9;
   color: #fff;
+}
+
+#pricing .pricing-content .pricing-item-blue .pricing-m {
+  font-size: 14px;
+  font-weight: 300;
+  color: #bec2ca;
 }
 
 #pricing .pricing-content .pricing-item-white {
@@ -1321,7 +1277,7 @@ footer .copy-right {
 }
 
 #contact .bg-contact {
-  background-color: #ffd756;
+  background-color: #FAB8C4;
   border-radius: 40px;
   padding: 30px;
   -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
