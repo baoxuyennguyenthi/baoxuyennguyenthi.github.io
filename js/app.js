@@ -68,9 +68,11 @@ function buttonUp() {
     inputVal = $.trim(inputVal).length;
     if (inputVal !== 0) {
         $('.searchbar-icon').css('display', 'none');
+        $('.searchbar-submit').css('display', 'block');
     } else {
         $('.searchbar-input').val('');
         $('.searchbar-icon').css('display', 'block');
+        $('.searchbar-submit').css('display', 'none');
     }
 }
 
@@ -134,16 +136,14 @@ nav.find('a').on('click', function () {
 
 //When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    })
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500);
 }
 function downFunction() {
     md = document.getElementById("features");
     // nav = document.getElementById("navbar");
-    window.scrollTo({
-        top: md.offsetTop - 100,
-        behavior: "smooth"
-    })
+    $('html, body').animate({
+        scrollTop: md.offsetTop - 100,
+    }, 500);
 }
