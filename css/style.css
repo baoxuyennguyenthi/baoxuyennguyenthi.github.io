@@ -63,6 +63,15 @@ div {
 
 header .sl-header {
   padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 576px) {
+  header .sl-header {
+    display: block;
+  }
 }
 
 header .navbar {
@@ -343,6 +352,60 @@ header .main_link .text-link:hover {
   z-index: 1;
 }
 
+@media screen and (max-width: 576px) {
+  .slider-header .main-pic .navbar,
+  .slider-header .main-pic .navbar.fixed-top {
+    background: #fff !important;
+    padding: 0 20px !important;
+    -webkit-box-shadow: 0px 0.5px 3px #d2d2d2;
+            box-shadow: 0px 0.5px 3px #d2d2d2;
+  }
+  .slider-header .main-pic .slider-title {
+    font-size: 70px !important;
+  }
+  .slider-header .main-pic .btn-login {
+    display: none;
+  }
+  .slider-header .main-pic ul.navbar-nav.mr-auto {
+    background-color: #fff;
+  }
+  .slider-header .main-pic li.nav-item {
+    padding: 0 !important;
+  }
+  .slider-header .main-pic li.nav-item:first-of-type a {
+    border-top: 1px dashed #eee;
+  }
+  .slider-header .main-pic a.nav-link {
+    padding: 12px 20px !important;
+    border-bottom: 1px dashed #eee;
+  }
+  .slider-header .main-pic .main_link {
+    display: none !important;
+  }
+  .slider-header .main-pic .main-pic {
+    position: relative !important;
+  }
+  .slider-header .main-pic .main-pic .main-pic-1 {
+    left: calc(50% - 180px) !important;
+    bottom: 20px !important;
+    width: 130px !important;
+  }
+  .slider-header .main-pic .main-pic .main-pic-2 {
+    top: 20px !important;
+    right: calc(50% - 130px) !important;
+    width: 110px !important;
+  }
+  .slider-header .main-pic .main-pic .main-pic-3 {
+    right: calc(50% - 135px) !important;
+    bottom: 0px !important;
+    width: 45px;
+    right: 70px !important;
+  }
+  .slider-header .main-pic .main-pic .main-pic-4 {
+    z-index: 1;
+  }
+}
+
 header {
   position: relative;
   overflow-x: hidden;
@@ -423,8 +486,8 @@ header .header-circles .header-circle-6 {
 
 header .header-circles .header-circle-7 {
   position: absolute;
-  top: 58%;
-  right: calc(50% - 500px);
+  top: 42%;
+  right: calc(50% - 520px);
   z-index: 2;
   width: 103px;
   height: 103px;
@@ -484,6 +547,12 @@ header .header-circles .header-circle-8 {
 }
 
 @media screen and (max-width: 576px) {
+  .sl-header {
+    padding-top: 0;
+  }
+  .slider-header {
+    padding-top: 0;
+  }
   .navbar,
   .navbar.fixed-top {
     background: #fff !important;
