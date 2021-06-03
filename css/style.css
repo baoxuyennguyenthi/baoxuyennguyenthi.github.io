@@ -48,7 +48,7 @@ p,
 a,
 span {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 * {
@@ -456,7 +456,7 @@ header .header-circles .header-circle-3 {
 header .header-circles .header-circle-5 {
   position: absolute;
   right: calc(50% - 250px);
-  bottom: -90px;
+  bottom: 50px;
   z-index: 2;
   width: 180px;
   height: 180px;
@@ -602,9 +602,9 @@ header .header-circles .header-circle-8 {
   }
   .header-circles .header-circle-3 {
     left: 10% !important;
-    top: 230px !important;
-    width: 48px !important;
-    height: 48px !important;
+    top: 70px !important;
+    width: 35px !important;
+    height: 35px !important;
   }
   .header-circles .header-circle-4 {
     display: none !important;
@@ -623,7 +623,7 @@ header .header-circles .header-circle-8 {
   }
   .header-circles .header-circle-8 {
     position: absolute;
-    top: 370px !important;
+    top: 200px !important;
     right: calc(50% - 250px) !important;
     width: 170px !important;
     height: 170px !important;
@@ -837,6 +837,7 @@ section {
   font-size: 70px;
 }
 
+/* Css id layout */
 #layouts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,6 +955,7 @@ section {
   }
 }
 
+/* Css id like */
 #like .bg-like {
   background: #e9f0f5;
   background: -webkit-gradient(linear, left top, right top, from(#e9f0f5), to(white));
@@ -963,21 +965,133 @@ section {
   border-radius: 50px;
   -webkit-box-shadow: 1px 20px 0px -10px #eef2f6, 2px 32px 0px -10px #f3f7f9;
           box-shadow: 1px 20px 0px -10px #eef2f6, 2px 32px 0px -10px #f3f7f9;
+  position: relative;
+  z-index: 0;
 }
 
 #like .like-content {
   padding: 100px 0;
 }
 
+#like .like-pic {
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translateX(100px) rotate(30deg);
+          transform: translateX(100px) rotate(30deg);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+#like .like-pic.aos-animate {
+  opacity: 1;
+  -webkit-transform: translateX(0) rotate(0);
+          transform: translateX(0) rotate(0);
+}
+
+#like .like-circle-pink {
+  position: absolute;
+  width: 410px;
+  height: 410px;
+  background: #fab8c4;
+  margin-top: -250px;
+  top: 50%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+#like .like-circles {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#like .like-circles .like-circle-1 {
+  position: absolute;
+  left: 240px;
+  bottom: -73px;
+  width: 130px;
+  height: 130px;
+  background: #FFDC60;
+  border-radius: 100%;
+}
+
+#like .like-circles .like-circle-2 {
+  position: absolute;
+  top: 58px;
+  left: 44.5%;
+  width: 70px;
+  height: 70px;
+  background: #FAB8C4;
+  border-radius: 100%;
+}
+
+#like .like-circles .like-circle-3 {
+  position: absolute;
+  top: -45px;
+  right: 150px;
+  width: 90px;
+  height: 90px;
+  background: #5956E9;
+  border-radius: 100%;
+}
+
+#like .like-circles .like-circle-4 {
+  position: absolute;
+  top: 174px;
+  right: 26px;
+  width: 24px;
+  height: 24px;
+  background: #FAB8C4;
+  border-radius: 100%;
+}
+
 @media screen and (max-width: 576px) {
-  #like .bg-like {
-    padding: 10px 20px;
+  #like .like-circles .like-circle-1 {
+    left: 240px;
+    bottom: 450px;
+    width: 40px;
+    height: 40px;
+  }
+  #like .like-circles .like-circle-2 {
+    top: 58px;
+    left: 10%;
+    width: 20px;
+    height: 20px;
+  }
+  #like .like-circles .like-circle-3 {
+    top: 20px;
+    right: 150px;
+    width: 50px;
+    height: 50px;
+  }
+  #like .like-circles .like-circle-4 {
+    top: 174px;
+    right: 26px;
+    width: 15px;
+    height: 15px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .pricing-item {
-    padding: 10px 30px;
+  #like .bg-like {
+    z-index: 2;
+    padding: 10px 0px 20px 20px;
+  }
+  #like .like-right {
+    padding-bottom: 40px;
+  }
+  #like .like-circle-pink {
+    top: -20px;
+    width: 280px;
+    height: 280px;
+    right: 70%;
+    margin: 0 -180px 0 0;
   }
 }
 
@@ -1151,6 +1265,12 @@ section {
 
 #pricing .pricing-content .pricing-list {
   padding: 30px 0;
+}
+
+@media screen and (max-width: 576px) {
+  .pricing-item {
+    padding: 10px 30px;
+  }
 }
 
 #collaboratio {

@@ -11,7 +11,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/libs/slick/slick.css" />
     <link rel="stylesheet" href="/libs/icomoon/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="/libs/aos/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -83,7 +83,7 @@
                         </div>
                         <div class="col-md-7">
                             <div class="main-pic-wrapper">
-                                <div class="main-pic aos-init">
+                                <div class="main-pic">
                                     <div class="main-pic-1" data-aos="fade-up" data-aos-delay="400"><img
                                             src="/images/main-pic-2.png" alt="" class="pic"></div>
                                     <div class="main-pic-2" data-aos="fade-left" data-aos-delay="500"><img
@@ -310,9 +310,22 @@
 
                     </div>
                     <div class="col-md-7 col-12">
-                        <div class="like-pic">
-                            <img src="/images/hand-1.png" alt="" srcset="" class="pic">
+                        <div class="like-right">
+                            <div class="like-pic" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="/images/hand-1.png" alt="" srcset="" class="pic">
+                            </div>
+                            <div class="like-circle-pink"></div>
                         </div>
+                    </div>
+                </div>
+                <div class="like-circles">
+                    <div class="like-circle-1" data-aos="fade-right" data-aos-delay="100">
+                    </div>
+                    <div class="like-circle-2" data-aos="fade-right" data-aos-delay="100">
+                    </div>
+                    <div class="like-circle-3" data-aos="fade-left" data-aos-delay="100">
+                    </div>
+                    <div class="like-circle-4" data-aos="fade-left" data-aos-delay="100">
                     </div>
                 </div>
             </div>
@@ -328,7 +341,7 @@
                         <h2 class="pricing-title title">
                             Find the <span class="title-color">Right Plan.</span> </h2>
                         <span class="sub-title">Flexible pricing options for freelancers and design teams.</span>
-                        <div class="pricing-switch">
+                        <!-- <div class="pricing-switch">
                             <span class="switch-text">Billed Yearly</span>
                             <label class="switch">
                                 <input type="checkbox">
@@ -336,7 +349,7 @@
                             </label>
 
                             <span class="switch-text">Billed Monthly</span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -519,7 +532,7 @@
     <script src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/libs/slick/slick.min.js"></script>
     <script type="text/javascript" src="/js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/libs/aos/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
