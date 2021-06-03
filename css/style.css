@@ -1145,8 +1145,8 @@ section {
 }
 
 #pricing .pricing-content .pricing-item:hover {
-  -webkit-box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05) !important;
-          box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05) !important;
+  -webkit-box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.5) !important;
+          box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.5) !important;
 }
 
 #pricing .pricing-content .pricing-item .pricing-icon {
@@ -1221,6 +1221,12 @@ section {
 
 #pricing .pricing-content .pricing-item-white {
   border: 1px solid #bec2ca;
+}
+
+#pricing .pricing-content .pricing-item-white .pricing-w {
+  color: #6f6f79;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 #pricing .pricing-content .pricing-list {

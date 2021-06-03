@@ -1226,7 +1226,7 @@ section {
             flex-direction: column;
 
             &:hover {
-                box-shadow: 0 .125rem .625rem rgba(0, 0, 0, .05) !important;
+                box-shadow: 0 .125rem .625rem rgba(0, 0, 0, .5) !important;
             }
 
             .pricing-icon {
@@ -1289,6 +1289,12 @@ section {
 
         .pricing-item-white {
             border: 1px solid #bec2ca;
+
+            .pricing-w {
+                color: #6f6f79;
+                font-size: 14px;
+                font-weight: 300;
+            }
         }
 
         .pricing-list {
