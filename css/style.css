@@ -786,7 +786,7 @@ header .header-circles .header-circle-8 {
     font-size: 16px;
   }
   .title {
-    font-size: 46px !important;
+    font-size: 35px !important;
   }
   #features {
     padding: 50px 0;
@@ -971,6 +971,10 @@ section {
 
 #like .like-content {
   padding: 100px 0;
+}
+
+#like .btn-purple {
+  margin-top: 30px;
 }
 
 #like .like-pic {
