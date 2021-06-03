@@ -737,6 +737,7 @@ header {
     color: #fff;
     z-index: 1;
     padding: 0;
+    padding: 150px 0;
 
     .features-bg {
         width: 100%;
@@ -858,6 +859,8 @@ header {
     }
 
     #features {
+        padding: 50px 0;
+
         .features-body {
             margin: 30px 0;
         }
@@ -1044,18 +1047,17 @@ section {
         padding: 100px 0;
 
     }
-}
 
-@media screen and (max-width: 576px) {
+    @media screen and (max-width: 576px) {
 
-    .like {
         .bg-like {
-            padding: 50px 0 20px 30px;
+            padding: 10px 20px;
         }
+
     }
-
-
 }
+
+
 
 
 
