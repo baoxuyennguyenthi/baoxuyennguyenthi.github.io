@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 145 40" style="enable-background:new 0 0 145 40;" xml:space="preserve">
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;fill:#292930;}
-	.st1{fill:#5956E9;}
-	.st2{fill:#FFFFFF;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#5956E9;}
 	.st3{fill:#FFDEE4;}
 	.st4{fill:#FAB8C4;}
-	.st5{font-family:'Poppins-SemiBold';}
-	.st6{font-size:30.8889px;}
 </style>
 <path class="st0" d="M61.7,9c2.5,0,4.5,0.6,6.1,1.9c1.6,1.3,2.7,3,3.2,5.2h-4.1c-0.4-1.1-1.1-1.9-2-2.5c-0.9-0.6-2-0.9-3.2-0.9
 	c-1,0-2,0.3-2.8,0.8s-1.5,1.3-2,2.2c-0.5,1-0.7,2.1-0.7,3.4c0,1.3,0.2,2.4,0.7,3.4c0.5,1,1.1,1.7,2,2.2c0.8,0.5,1.8,0.8,2.8,0.8
@@ -28,12 +26,11 @@
 	c-1.3,0-2.4-0.3-3.4-0.9c-0.9-0.6-1.6-1.5-2-2.5V29h-3.9V8.3h3.9v8.4c0.4-1,1-1.9,2-2.5C128.6,13.6,129.7,13.3,131,13.3z
 	 M129.7,16.7c-1.2,0-2.2,0.4-3,1.2c-0.8,0.8-1.1,1.9-1.1,3.3c0,1.4,0.4,2.5,1.1,3.3c0.8,0.8,1.8,1.2,3,1.2c1.2,0,2.2-0.4,3-1.2
 	c0.7-0.8,1.1-1.9,1.1-3.3s-0.4-2.5-1.1-3.3C132,17.1,131,16.7,129.7,16.7z"/>
-<path class="st1" d="M143.1,24.9V29h-4.3v-4.1H143.1z"/>
-<path class="st2" d="M11.4,0h17.1C34.9,0,40,5.1,40,11.4v17.1C40,34.9,34.9,40,28.6,40H11.4C5.1,40,0,34.9,0,28.6V11.4
+<path class="st1" d="M11.4,0h17.1C34.9,0,40,5.1,40,11.4v17.1C40,34.9,34.9,40,28.6,40H11.4C5.1,40,0,34.9,0,28.6V11.4
 	C0,5.1,5.1,0,11.4,0z"/>
-<circle class="st1" cx="12.9" cy="12.9" r="5.7"/>
+<circle class="st2" cx="12.9" cy="12.9" r="5.7"/>
 <circle class="st3" cx="12.9" cy="27.1" r="5.7"/>
 <circle class="st4" cx="27.1" cy="12.9" r="5.7"/>
-<circle class="st1" cx="27.1" cy="27.1" r="5.7"/>
-<text transform="matrix(1 0 0 1 51.1758 29.196)" class="st5 st6">Spica</text>
+<circle class="st2" cx="27.1" cy="27.1" r="5.7"/>
+<text transform="matrix(1 0 0 1 51.1758 29.196)" style="display:none; font-family:'Poppins-SemiBold'; font-size:30.8889px;">Spica</text>
 </svg>
