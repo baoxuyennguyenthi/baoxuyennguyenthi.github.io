@@ -1158,11 +1158,15 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: -webkit-box-shadow 0.125s ease-in-out;
+  transition: -webkit-box-shadow 0.125s ease-in-out;
+  transition: box-shadow 0.125s ease-in-out;
+  transition: box-shadow 0.125s ease-in-out, -webkit-box-shadow 0.125s ease-in-out;
 }
 
 #pricing .pricing-content .pricing-item:hover {
-  -webkit-box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.5) !important;
-          box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.5) !important;
+  -webkit-box-shadow: 0 0.125rem 0.625rem rgba(89, 86, 233, 0.3) !important;
+          box-shadow: 0 0.125rem 0.625rem rgba(89, 86, 233, 0.3) !important;
 }
 
 #pricing .pricing-content .pricing-item .pricing-icon {
@@ -1236,7 +1240,7 @@ section {
 }
 
 #pricing .pricing-content .pricing-item-white {
-  border: 1px solid #5956E9;
+  border: 1px solid rgba(89, 86, 233, 0.6);
 }
 
 #pricing .pricing-content .pricing-item-white .pricing-w {

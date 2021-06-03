@@ -1238,9 +1238,10 @@ section {
             border-radius: 30px;
             display: flex;
             flex-direction: column;
+            transition: box-shadow 0.125s ease-in-out;
 
             &:hover {
-                box-shadow: 0 .125rem .625rem rgba(0, 0, 0, .5) !important;
+                box-shadow: 0 .125rem .625rem rgba(89, 86, 233, .3) !important;
             }
 
             .pricing-icon {
@@ -1302,7 +1303,7 @@ section {
         }
 
         .pricing-item-white {
-            border: 1px solid #5956E9;
+            border: 1px solid rgba(89, 86, 233, .6);
 
             .pricing-w {
                 color: #6f6f79;
